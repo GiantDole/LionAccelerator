@@ -1,0 +1,62 @@
+\documentclass{scrartcl}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with`a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=3cm,bottom=3cm,left=2.8cm,right=2.8cm,marginparwidth=2.2cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{lipsum}
+\usepackage[
+backend=biber,
+style=numeric,
+url=false,
+]{biblatex}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{enumitem}
+\setlist[enumerate]{label*=\arabic*.}
+\usepackage[us]{datetime}
+\newdate{date}{04}{04}{2022}
+\date{\displaydate{date}}
+
+\addbibresource{bibliography.bib}
+
+\input{version}
+\title{LionAccelerator Organisation WhitePaper\\}
+\subtitle{{\large A web3-based event bringing together web3 developers and investors}\\{\footnotesize Version \versionnumber}}
+\author{
+Adrian Koegl\\
+\texttt{adrian.koegl@columbia.edu}
+\and
+Ellery Ketchum\\
+\texttt{ketchum.e@northeastern.edu}
+}
+%\setlength{\parindent}{1em}
+
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\newpage
+
+
+\input{0 Abstract}
+\input{1 Motivation}
+\input{2 Ressources}
+\input{3 Event}
+\input{3.1 Incentive System}
+\input{4 Application}
+\input{5 Planning Phases}
+\input{6 Further Ideas}
+\input{Appendix}
+
+\printbibliography
+
+\end{document}
